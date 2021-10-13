@@ -5,7 +5,6 @@ import styled from 'styled-components/macro';
 import { useState, useEffect } from 'react';
 import ReactMarkdown from 'react-markdown';
 
-
 const WholeWrapper = styled.div`
   min-width: 320px;
   min-height: 100vh;
@@ -44,7 +43,7 @@ const Title = styled.div`
 
 const markdownFiles = require.context('../public/writings', false, /\.md$/)
   .keys()
-  .map(a => a.substring(1))
+  .map(a => a.substring(1));
   
 
 function App() {

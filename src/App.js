@@ -20,7 +20,6 @@ const WholeWrapper = styled.div`
 const MainWrapper = styled.div`
   width: 100%;
   max-width: 1200px;
-  max-width: 1200px;
   height: 100%;
   display: flex;
   justify-content: center;
@@ -34,34 +33,45 @@ const MainWrapper = styled.div`
 `
 
 const ContentWrapper = styled.div`
-  width: 100%;
+  width: calc(100% - 100px);
+  padding: 50px;
 `
 
+const Title = styled.div`
+  font-size: 40px;
+  font-weight: bold;
+`
 
-const markdownFiles = require.context('./writings', false, /\.md$/)
+const markdownFiles = require.context('../public/writings', false, /\.md$/)
   .keys()
-  .map(a => "./writings" + a.substring(1))
+  .map(a => a.substring(1))
   
 
 function App() {
+
   const [posts, setPosts] = useState([]);
+  const [title, setTitle] = useState([]);
+  const [post, setPost] = useState([]);
+
   useEffect(() => {
-    Promise.all(markdownFiles.map((file) => fetch(file)
+    Promise.all(markdownFiles.map((file) => fetch("/writings" + file)
       .then((res) => res.text())))
       .then((posts) => setPosts(posts))
       .catch((err) => console.error(err));
   }, [])
+
+  useEffect(() => {
+    setPost(posts[0])
+    setTitle(markdownFiles[0].split(".")[0])
+  }, [posts])
 
   return (
     <WholeWrapper>
       <MainWrapper>
         <Header />
         <ContentWrapper>
-          {posts.map((post) => (
-            <>
-              <ReactMarkdown children={post} />
-            </>)
-          )}
+          <Title>{title}</Title>
+          <ReactMarkdown children={post} />
         </ContentWrapper>
       </MainWrapper>
     </WholeWrapper>

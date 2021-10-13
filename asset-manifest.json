@@ -1,24 +1,24 @@
 {
   "files": {
     "main.css": "/static/css/main.be0ca9c3.chunk.css",
-    "main.js": "/static/js/main.688e5d97.chunk.js",
-    "main.js.map": "/static/js/main.688e5d97.chunk.js.map",
+    "main.js": "/static/js/main.0b2496b5.chunk.js",
+    "main.js.map": "/static/js/main.0b2496b5.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.ca1b4929.js",
     "runtime-main.js.map": "/static/js/runtime-main.ca1b4929.js.map",
-    "static/js/2.a6e308b8.chunk.js": "/static/js/2.a6e308b8.chunk.js",
-    "static/js/2.a6e308b8.chunk.js.map": "/static/js/2.a6e308b8.chunk.js.map",
+    "static/js/2.3ac53fed.chunk.js": "/static/js/2.3ac53fed.chunk.js",
+    "static/js/2.3ac53fed.chunk.js.map": "/static/js/2.3ac53fed.chunk.js.map",
     "static/js/3.720b0fc0.chunk.js": "/static/js/3.720b0fc0.chunk.js",
     "static/js/3.720b0fc0.chunk.js.map": "/static/js/3.720b0fc0.chunk.js.map",
     "index.html": "/index.html",
     "static/css/main.be0ca9c3.chunk.css.map": "/static/css/main.be0ca9c3.chunk.css.map",
-    "static/js/2.a6e308b8.chunk.js.LICENSE.txt": "/static/js/2.a6e308b8.chunk.js.LICENSE.txt",
-    "static/media/logo.16b579e1.jpg": "/static/media/logo.16b579e1.jpg",
-    "static/media/whydontyouknow.md": "/static/media/whydontyouknow.371a93a9.md"
+    "static/js/2.3ac53fed.chunk.js.LICENSE.txt": "/static/js/2.3ac53fed.chunk.js.LICENSE.txt",
+    "static/media/WHY DO WE SUFFER.md": "/static/media/WHY DO WE SUFFER.f17815d5.md",
+    "static/media/logo.16b579e1.jpg": "/static/media/logo.16b579e1.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.ca1b4929.js",
-    "static/js/2.a6e308b8.chunk.js",
+    "static/js/2.3ac53fed.chunk.js",
     "static/css/main.be0ca9c3.chunk.css",
-    "static/js/main.688e5d97.chunk.js"
+    "static/js/main.0b2496b5.chunk.js"
   ]
 }
